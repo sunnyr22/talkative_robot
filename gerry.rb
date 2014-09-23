@@ -1,0 +1,1 @@
+ puts 5 > 3 ? "no it isn\'t" : "yes it is" 

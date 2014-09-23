@@ -1,5 +1,5 @@
-
 require 'pry'
+
 puts "What is users name?"
 user_name = gets.chomp.capitalize
 
@@ -12,14 +12,14 @@ answer = gets.chomp
 
 if age > 35
 	puts "Yippe kay ya!!!!"
-
-else puts " Whacka doo!"
+else puts "Whacka doo!"
 end
 
-puts "You will be 75 years old in #{75 - age}"
+puts "You will be 75 years old in #{75 - age} years"
 
 user_name = user_name.upcase!
-puts user_name
+puts "#{user_name}"
 
 puts "Hey #{user_name.split(" ")[0]} where are you going?"
-puts 'Yo "Dude" what\'s up?'
+
+puts "Yo 'Dude' what's up?"

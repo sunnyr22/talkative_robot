@@ -23,3 +23,5 @@ puts user_name
 
 puts "Hey #{user_name.split(" ")[0]} where are you going?"
 puts 'Yo "Dude" what\'s up?'
+
+puts "Ssup Doodster!"

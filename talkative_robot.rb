@@ -9,12 +9,12 @@ sex = gets.chomp.capitalize
 
 
 puts "Input User's age to enter the Dragon"
-age = gets.chomp.to_i
+age = gets.chomp
 
 # puts "Enter your age"
 # age = gets.chomp
 
-
+binding.pry
 if age < 13
     puts "You are not yet a teenager"
 else
@@ -24,32 +24,32 @@ end
 puts "No entry" unless age < 19
 puts "You can legally drink" if age >= 21
  
- case 
- when age < 75 
+case 
+when age < 75 
  	puts "You will be 75 in #{75 - age}"
- when age > 75
+when age > 75
  	puts "you turned 75 in #{75 - age}years"
- when age == 75 
+when age == 75 
  	puts "User age is 75"	
- end
+end
 
- if age < 18 && sex == "M"
+if age < 18 && sex == "M"
  	puts "You are young boy"
 
- 	 elsif age < 18 && sex == "F"
+elsif age < 18 && sex == "F"
  	puts "You are young girl"
 
- 	 elsif age > 90 && sex == "M"
+elsif age > 90 && sex == "M"
  	puts "Are you a great grandfather?"
 
- elsif age > 90 && sex == "F"
+elsif age > 90 && sex == "F"
  	puts "Are you a great grandmother?"
 
- else 
+else 
  	puts "default message "
- end
+end
 
- puts age > 50 ? "You are getting old" : "You're not old quite yet"
+puts age > 50 ? "You are getting old" : "You're not old quite yet"
 
 
 #  if age < 18

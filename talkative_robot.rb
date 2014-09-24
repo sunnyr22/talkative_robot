@@ -6,7 +6,22 @@ user_name = gets.chomp.capitalize
 puts "Gender please? M or F"
 sex = gets.chomp.capitalize
 
+puts "Input User's age to enter the Dragon"
+age = gets.chomp.to_i
 
+
+ if (age < 18) 
+ 	puts "You are too young"
+elsif age == 19
+	puts "Hello old teenager"
+else 
+	age > 21
+	puts "Hello adult.Please enter!"
+end
+
+puts "Hi #{user_name} who is #{age} years old!"
+puts "Do you mind if I call you #{user_name[0]}?"
+answer = gets.chomp
 
 puts "Input User's age to enter the Dragon"
 age = gets.chomp
